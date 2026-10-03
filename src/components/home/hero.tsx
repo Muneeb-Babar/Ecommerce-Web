@@ -27,9 +27,12 @@ import { easeOutQuint, fadeUp, staggerContainer } from "@/components/shared/moti
 
 const heroProduct = products[0]; // Aurora Headphones
 const heroImages = [
-  heroProduct.images[0].src,
-  heroProduct.images[1].src,
-  heroProduct.images[2].src,
+  // Front/Primary – realistic glossy/glassy headphones render
+  "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=95&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // Side/angled – sleek premium glassy look
+  "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=95&w=2200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // Profile/back – soft-lit premium render
+  "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=95&w=2200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
 // Deterministic particle field (no SSR mismatch).

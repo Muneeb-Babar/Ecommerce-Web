@@ -5,6 +5,7 @@ import { SearchOverlay } from "@/components/layout/search-overlay";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { BackToTop } from "@/components/layout/back-to-top";
 import { ScrollProgress } from "@/components/shared/scroll-progress";
+import { LenisProvider } from "@/providers/lenis-provider";
 
 export default function StoreLayout({
   children,
@@ -12,7 +13,7 @@ export default function StoreLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <LenisProvider>
       <ScrollProgress />
       <AnnouncementBar />
       <Navbar />
@@ -21,6 +22,6 @@ export default function StoreLayout({
       <CartDrawer />
       <SearchOverlay />
       <BackToTop />
-    </>
+    </LenisProvider>
   );
 }
